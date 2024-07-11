@@ -1,0 +1,94 @@
+.fondo1 {
+   background-color: #DC3545;
+}
+
+.fondo2 {
+   background-color: #373A3C; 
+} 
+
+.button {
+   border: white;
+   color: white;
+   padding: 11px 83px 10px 90px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16pt;
+   margin: 39.5pt 197pt;
+   cursor: pointer;
+   background-color: red00
+}
+
+.lobster-regular {
+   font-family: "Lobster";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 37px;
+   text-align: center;
+   color: white;
+   text-decoration: none;
+}
+
+.cabin-regular {
+   font-family: "Cabin";
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-size: 16px;
+   font-style: normal;
+   font-variation-settings:"wdth" 100;
+   color: white;
+   text-decoration: none;
+} 
+
+.cabin-bold {
+   font-family: "Cabin";
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-variation-settings:"wdth" 100;
+   font-size: 40px;
+} 
+
+.img-hero {
+   border: white;
+   padding: 0px 0px 0px 0px;
+   width: 482pt;
+   height: 384pt;
+
+   
+}
+
+.text-hero {
+   padding: 0px 16px 0px 0px;
+   margin: 56.5px 0px;
+   height: 425px;
+   width: 201px;
+   font-size: 40px;
+   text-align: left;
+
+   
+}
+
+.text-hero2 {
+   padding: 0px 16px 0px 0px;
+   margin: 56.5px 150px;
+   height: 269px;
+   width: 27px;
+   font-size: 20px;
+   text-align: left; 
+}
+
+.flexbox {
+   display: flex;
+   flex-direction: row; 
+   margin-left: 150px;
+   margin-right: 150px;
+   justify-content: center;
+  }
+
+.flex-item {
+ width: 482pt;
+ height: 384pt;
+ text-align: left; 
+ margin: 0;
+}
