@@ -1,29 +1,21 @@
-.fondo1 {
-   background-color: #DC3545;
-}
-
-.fondo2 {
-   background-color: #373A3C; 
-} 
-
-.button {
-   border: white;
-   color: white;
-   padding: 11px 83px 10px 90px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16pt;
-   margin: 39.5pt 197pt;
-   cursor: pointer;
-   background-color: red00
+* { margin:0; padding: 0;
 }
 
 .lobster-regular {
    font-family: "Lobster";
    font-weight: 400;
    font-style: normal;
-   font-size: 37px;
+   font-size: 37pt;
+   text-align: center;
+   color: white;
+   text-decoration: none;
+}
+
+.ricomida {
+   font-family: "Lobster";
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30pt;
    text-align: center;
    color: white;
    text-decoration: none;
@@ -33,11 +25,13 @@
    font-family: "Cabin";
    font-optical-sizing: auto;
    font-weight: 400;
-   font-size: 16px;
+   font-size: 16pt;
    font-style: normal;
    font-variation-settings:"wdth" 100;
    color: white;
    text-decoration: none;
+   line-height: 30pt;
+   margin-bottom: 0;
 } 
 
 .cabin-bold {
@@ -46,16 +40,13 @@
    font-weight: 700;
    font-style: normal;
    font-variation-settings:"wdth" 100;
-   font-size: 40px;
+   font-size: 40pt;
 } 
 
 .img-hero {
-   border: white;
    padding: 0px 0px 0px 0px;
    width: 482pt;
    height: 384pt;
-
-   
 }
 
 .text-hero {
@@ -81,14 +72,46 @@
 .flexbox {
    display: flex;
    flex-direction: row; 
-   margin-left: 150px;
-   margin-right: 150px;
+   flex-wrap: wrap;
+   margin-top: 25pt;
+   margin-bottom: 68pt;
    justify-content: center;
-  }
+}
 
 .flex-item {
- width: 482pt;
- height: 384pt;
- text-align: left; 
- margin: 0;
+   width: 482pt;
+   height: 384pt;
+   text-align: left; 
+   margin: 0;
+}
+
+.flexbox1 {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap; 
+   text-align: center;
+}
+
+.flex-item1 {
+   height: 534pt;
+   text-align: center; 
+   background-color: #DC3545;
+}
+
+.flex-item2 {
+   height: 127pt;
+   text-align: center; 
+   background-color: #373A3C;
+   color: white;
+   margin: auto;
+}
+
+.card-container {
+   display: flex;
+   justify-content: center;
+   gap: 5pt; 
+}
+
+.card {
+   width: 18rem;
 }
