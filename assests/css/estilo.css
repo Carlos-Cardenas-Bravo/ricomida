@@ -1,4 +1,10 @@
-* { margin:0; padding: 0;
+body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
 .lobster-regular {
@@ -34,55 +40,38 @@
    margin-bottom: 0;
 } 
 
+.cabin-regular2 {
+   font-family: "Cabin";
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-size: 16pt;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
+   color: #373A3C;
+   text-decoration: none;
+   line-height: 30pt;
+   text-align: left;
+} 
+
 .cabin-bold {
    font-family: "Cabin";
    font-optical-sizing: auto;
    font-weight: 700;
    font-style: normal;
    font-variation-settings:"wdth" 100;
-   font-size: 40pt;
 } 
-
-.img-hero {
-   padding: 0px 0px 0px 0px;
-   width: 482pt;
-   height: 384pt;
-}
-
-.text-hero {
-   padding: 0px 16px 0px 0px;
-   margin: 56.5px 0px;
-   height: 425px;
-   width: 201px;
-   font-size: 40px;
-   text-align: left;
-
-   
-}
-
-.text-hero2 {
-   padding: 0px 16px 0px 0px;
-   margin: 56.5px 150px;
-   height: 269px;
-   width: 27px;
-   font-size: 20px;
-   text-align: left; 
-}
 
 .flexbox {
    display: flex;
-   flex-direction: row; 
    flex-wrap: wrap;
-   margin-top: 25pt;
-   margin-bottom: 68pt;
-   justify-content: center;
+   gap: 2pt;
 }
 
 .flex-item {
-   width: 482pt;
-   height: 384pt;
-   text-align: left; 
-   margin: 0;
+   flex: 1 1 100%;
+}
+.flex-item img {
+   width: 100%;
 }
 
 .flexbox1 {
@@ -109,9 +98,129 @@
 .card-container {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    gap: 5pt; 
 }
 
 .card {
    width: 18rem;
+}
+
+.navbar-toggler-icon {
+   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.button-row button {
+   background-color: transparent;
+   color: #373A3C;
+   font-family: "Cabin";
+   font-weight: 400;
+   border: 1pt solid rgb(95, 95, 95);
+   border-radius: 4pt;
+}
+
+.button-row-mobile button {
+   padding: 10pt;
+}
+
+.button-row-desktop button {
+   padding: 12pt 14pt;
+}
+
+.button-row-mobile button,
+.button-row-desktop button {
+   background-color: transparent;
+   color: #373A3C;
+   font-family: "Cabin";
+   font-weight: 400;
+   border: 1pt solid rgb(95, 95, 95);
+   border-radius: 4pt;
+}
+
+@media (min-width: 992px) {
+   .ml-lg-5 {
+   margin-left: 150px !important;
+   }
+   .mr-lg-5 {
+       margin-right: 150px !important;
+   }
+   .cabin-bold {
+      font-size: 40pt;
+      line-height: 49pt;
+   }
+   .small-text {
+       font-size: 20pt;
+   }
+   .button-row button {
+       font-size: 16pt;
+   }
+   .container {
+       margin-left: 150pt;
+       margin-right: 150pt;
+   }
+   .col-md-6 img {
+      max-width: 482pt;
+      max-height: 384pt;
+  }
+  .col-md-6.text-col {
+      max-width: 425pt;
+      padding-left: 10pt;
+      padding-right: 10pt;
+      text-align: left;
+  }
+  .text-col p:first-child {
+   max-width: 425pt;
+}
+}
+
+
+@media (max-width: 991px) {
+   .cabin-bold {
+       font-size: 25pt;
+       line-height: 30pt;
+   }
+   .small-text {
+       font-size: 16pt;
+   }
+   .button-row button {
+       font-size: 13pt;
+   }
+   .button-row-mobile button {
+       padding: 10pt 10pt;
+   }
+   .container {
+       margin-left: 37pt;
+       margin-right: 37pt;
+   }
+   .col-md-6 img {
+       width: 100%;
+       height: auto;
+   }
+   .col-md-6.text-col {
+       text-align: center;
+   }
+}
+
+@media (max-width: 768px) {
+   .tex-col {
+       padding: 0 37pt;
+       box-sizing: border-box;
+       text-align: center;
+   }
+   .tex-col img {
+       margin: 0 auto;
+   }
+   .cabin-bold,
+    .small-text {
+        margin: 0 auto;
+    }
+   .button-row button {
+      margin: 0 37pt 0 37pt;
+  }
+  .button-row button:not(:last-child) {
+      margin-right: 15pt;
+  }
+   #carouselExampleIndicators {
+       display: none;
+   }
 }
